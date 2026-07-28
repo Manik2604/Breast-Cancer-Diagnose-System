@@ -13,7 +13,7 @@ import tensorflow as tf
 try:
     # We must load BOTH the scaler and the neural network
     scaler = joblib.load('Breast_Cancer_Model.pkl')
-    deployed_nn = tf.keras.models.load_model('breast_cancer_model.h5')
+    deployed_nn = tf.keras.models.load_model('Breast_Cancer_Model.h5')
     print("Scaler and Deep Learning Model loaded successfully!")
 except Exception as e:
     print(f"Warning: Files not found or error loading. {e}")
